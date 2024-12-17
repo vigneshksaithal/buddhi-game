@@ -37,15 +37,13 @@ export const MemoryQuestion = ({ context, setCurrentPage }: GameProps) => {
   return (
     <vstack height="100%" width="100%" padding='large' gap="medium" alignment="center middle" backgroundColor='#FF5700'>
       <text size='medium' weight='bold'>Memory Question</text>
-      <text size='medium'>Remember the sequence</text>
-      <button onPress={() => setShowButtons(!showButtons)}>
-        {showButtons ? 'Show Sequence' : 'Hide Sequence'}
-      </button>
+      <text size='large' weight='bold'>Remember this sequence</text>
       {!showButtons && <text size='xxlarge' weight='bold'>{sequence}</text>}
+      <button onPress={() => setShowButtons(true)}>Continue</button>
       {showButtons && (
         <>
           <text size='medium'>Enter the sequence you remembered:</text>
-          <text size='medium'>Your sequence: {userSequence}</text>
+          <text size='xlarge' weight='bold'>Your sequence: {userSequence}</text>
           <hstack width="100%" alignment="center middle" gap="medium">
             <button width="80px" onPress={() => handleNumberClick('1')}>1</button>
             <button width="80px" onPress={() => handleNumberClick('2')}>2</button>
