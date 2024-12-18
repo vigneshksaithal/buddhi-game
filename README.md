@@ -14,24 +14,8 @@ Buddhi is an engaging collection of brain training games designed to enhance cog
 
 ### Prerequisites
 
-- Node.js (v18 or higher)
-- pnpm (v8 or higher)
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/buddhi-game.git
-
-# Navigate to the project directory
-cd buddhi-game
-
-# Install dependencies
-pnpm install
-
-# Start the development server
-pnpm dev
-```
+- Node.js (v22 or higher)
+- pnpm (v9 or higher)
 
 ## 🎯 Available Games
 
@@ -49,11 +33,8 @@ pnpm dev
 
 ## 🛠️ Tech Stack
 
-- React/Next.js - Frontend framework
+- React - Frontend framework
 - TypeScript - Type safety and better developer experience
-- Tailwind CSS - Styling
-- Zustand - State management
-- Framer Motion - Animations
 
 ## 📱 Supported Platforms
 
